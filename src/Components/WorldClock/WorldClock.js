@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { nanoid } from "nanoid";
-// import Clocks from "./Clocks";
 import Clock from "./Clock";
 
 import Form from "./Form";
