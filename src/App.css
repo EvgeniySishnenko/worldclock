@@ -1,0 +1,112 @@
+.App {
+  background-image: url("./images/bg.png");
+  height: 100vh;
+  background-color: black;
+}
+.WorldClock {
+  width: 600px;
+  margin: 0 auto;
+  padding: 50px 0 0;
+}
+form {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+input {
+  width: 200px;
+  height: 20px;
+}
+button {
+  width: 150px;
+  height: 26px;
+  cursor: pointer;
+}
+.shrt-txt {
+  color: white;
+}
+.Clock {
+  width: 200px;
+  height: 200px;
+  border: 2px solid white;
+  border-radius: 50%;
+  position: relative;
+}
+.Clocks {
+  display: flex;
+  flex-wrap: wrap;
+}
+.Clock::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hour,
+.min,
+.sec {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hour {
+  width: 100px;
+  height: 100px;
+}
+.hour::after {
+  content: "";
+  width: 7px;
+  height: 50px;
+  background-color: white;
+  border-radius: 4px 4px 0 0;
+}
+.min {
+  width: 120px;
+  height: 120px;
+}
+.min::after {
+  content: "";
+  width: 5px;
+  height: 70px;
+  background-color: white;
+  border-radius: 4px 4px 0 0;
+}
+.sec {
+  width: 140px;
+  height: 140px;
+}
+.sec::after {
+  content: "";
+  width: 3px;
+  height: 80px;
+  background-color: white;
+  border-radius: 4px 4px 0 0;
+}
+.Clock-name {
+  color: white;
+}
+.Clock-wrap {
+  position: relative;
+  margin-top: 50px;
+  margin-right: 50px;
+}
+.Clock-close {
+  color: white;
+  position: absolute;
+  top: 0;
+  right: -10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.default {
+  color: white;
+  text-align: center;
+}
